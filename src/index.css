@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('./Fonts/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansItalic';
+  src: url('./Fonts/IBMPlexSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansArabicRegular';
+  src: url('./Fonts/IBMPlexSansArabic-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansArabicBold';
+  src: url('./Fonts/IBMPlexSansArabic-Bold.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'IBMPlexSansArabicLight';
+  src: url('./Fonts/IBMPlexSansArabic-Light.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
+@theme {
+  --font-arabic: 'IBMPlexSansArabicRegular', sans-serif;
+  --font-arabic-bold: 'IBMPlexSansArabicBold', sans-serif; 
+  --font-english: 'IBMPlexSans', sans-serif;
+  --font-english-italic: 'IBMPlexSansItalic', sans-serif;
+  --font-arabic-light: 'IBMPlexSansArabicLight', sans-serif;
+}
