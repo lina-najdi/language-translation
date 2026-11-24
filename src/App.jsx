@@ -63,7 +63,7 @@ function App() {
 
       <div className="w-350 h-150 mx-auto my-10 border-2  flex   border-teal-200/30 bg-violet-200 shadow-2xl p-20 rounded-xl">
 
-        <div className="flex w-full h-full items-center justify-between gap-10 shadow-2xl relative">
+        <div className="flex w-full h-full items-center justify-between gap-10  relative">
 
           <div className="w-full h-full bg-violet-900 rounded-lg p-7 shadow-2xl relative opacity-80">
             <h1 className="flex items-center justify-center gap-3 text-3xl font-arabic-bold text-white mt-4 text-center">
