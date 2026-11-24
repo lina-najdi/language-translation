@@ -1,16 +1,42 @@
-# React + Vite
+# Multilingual Translation Dashboard 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive multilingual translation web application built with **React**, **Tailwind CSS**, and **react-i18next**. The application supports four languages with full internationalization (i18n), dynamic layout direction switching (LTR / RTL), and persistent language detection.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Multi-Language Support**: Seamlessly switch between **English**, **Arabic (العربية)**, **Spanish (Español)**, and **Urdu (اردو)**.
+- **Dynamic RTL / LTR Switching**: Automatic bidirectional layout adjustments (`dir="rtl"` / `dir="ltr"`) for right-to-left languages (Arabic and Urdu).
+- **Persistent Localization**: Automatically detects and remembers the user's preferred language using `i18next-browser-languagedetector` and `localStorage`.
+- **Modular Translation Files**: Translation resources structured in clean, dedicated JSON files (`en.json`, `ar.json`, `es.json`, `ur.json`).
+- **Interactive Language Modal**: Elegant popup dialog for language switching with glassmorphism and backdrop blur.
+- **Modern UI**: Styled with Tailwind CSS and responsive design patterns, integrated with Lucide React icons.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework**: [React](https://react.dev/) (Vite)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Internationalization**: [i18next](https://www.i18next.com/) & [react-i18next](https://react.i18next.com/)
+- **Language Detection**: `i18next-browser-languagedetector`
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/             # Media and static images
+├── locales/            # JSON translation files
+│   ├── ar.json
+│   ├── en.json
+│   ├── es.json
+│   └── ur.json
+├── App.css
+├── App.jsx             # Main dashboard UI and layout logic
+├── i18n.js             # Centralized i18n and detector configuration
+├── index.css           # Global styles and Tailwind imports
+└── main.jsx            # Application root
